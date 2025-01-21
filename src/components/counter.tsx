@@ -1,3 +1,5 @@
+"use client";
+import { Button } from "@chakra-ui/react";
 import { useState } from "react";
 
 export default function Counter() {
@@ -5,7 +7,7 @@ export default function Counter() {
   return (
     <>
       <p>Count: {count}</p>
-      <button onClick={() => setCount((prev) => prev + 1)}>Increment</button>
+      <Button onClick={() => setCount((prev) => prev + 1)}>Increment</Button>
     </>
   );
 }
